@@ -79,7 +79,7 @@ function Main() {
               })}
             </p>
           </div>
-          <div className="flex items-center justify-start w-[100%] pl-[245px] pr-[245px]">
+          <div className="flex items-center justify-center w-[100%] pl-[245px] pr-[245px]">
             <div className="flex flex-col items-center">
               <div className="flex items-center justify-start">
                 <div className="w-[100%]">
