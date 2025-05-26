@@ -1,6 +1,7 @@
 import React from "react";
 import "../index.css";
-import bgImage from "../assets/1 screen.svg";
+import screen1 from "../assets/1 screen.svg";
+import screen2 from "../assets/2 screen.svg";
 import paytion from "../assets/paytion.svg";
 import { useLanguage } from "../context/LanguageContext";
 
@@ -13,7 +14,7 @@ function Main() {
         <div className="flex items-center justify-center w-[100%]">
           <div
             className="w-full h-[870px] bg-center bg-no-repeat bg-cover"
-            style={{ backgroundImage: `url(${bgImage})` }}
+            style={{ backgroundImage: `url(${screen1})` }}
           ></div>
           <div className="flex items-start justify-start w-[100%] h-[870px] absolute">
             <div className="flex flex-col items-start justify-start gap-[50px] w-auto h-auto pt-[150px] pl-[245px] pr-[245px]">
@@ -45,6 +46,23 @@ function Main() {
                   })}
                 </button>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex items-start justify-center w-[100%]">
+          <div
+            className="w-full h-[870px] bg-center bg-no-repeat bg-cover"
+            style={{ backgroundImage: `url(${screen2})` }}
+          ></div>
+          <div className="flex items-start justify-start w-[100%] absolute p-[150px] pl-[245px] pr-[245px]">
+            <div className="h-[200px] overflow-hidden">
+              <p className="text-white text-[46px] font-[600]">
+                {t({
+                  ru: "Решаем задачи, связанные с финансами",
+                  uz: "Biz moliya bilan bog'liq muammolarni hal qilamiz",
+                  en: "We solve problems related to finances",
+                })}
+              </p>
             </div>
           </div>
         </div>
